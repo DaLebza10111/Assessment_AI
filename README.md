@@ -18,11 +18,15 @@ Dependencies:
 </ul>
 
 Challenges:
-<li>Time lag between the prompts and response.</li>
-<li>Limited access (developer/free-tier).</li>
+<ul>
+    <li>Time lag between the prompts and response.</li>
+    <li>Limited access (developer/free-tier).</li>
+</ul>
 
 Nice to haves:
-<li>Able to end conversation whenever the user wants to.</li>
-<li>Continuous listening while the AI is responding to previous prompt.</li>
-<li>Shorter pause breaks [premium/paid api version].</li>
-<li>Ability to choose between different voices/accents.</li>
+<ul>
+    <li>Able to end conversation whenever the user wants to.</li>
+    <li>Continuous listening while the AI is responding to previous prompt.</li>
+    <li>Shorter pause breaks [premium/paid api version].</li>
+    <li>Ability to choose between different voices/accents.</li>
+</ul>

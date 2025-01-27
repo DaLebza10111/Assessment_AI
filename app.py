@@ -61,7 +61,7 @@ def save_conversation_to_pdf(conversation):
         pdf.set_font("Arial", size=12)
 
         pdf.cell(200, 10, txt="IELTS Instructor Conversation", ln=True, align='C')
-        pdf.ln(10)  # Add a line break
+        pdf.ln(10)
 
         for entry in conversation:
             role, text = entry
@@ -69,7 +69,7 @@ def save_conversation_to_pdf(conversation):
             pdf.cell(0, 10, txt=f"{role}:", ln=True)
             pdf.set_font("Arial", size=12)
             pdf.multi_cell(0, 10, text)
-            pdf.ln(5)  # Add space between entries
+            pdf.ln(5)
 
         pdf.output(filename)
         print(f"Conversation saved to {filename}")
@@ -131,14 +131,12 @@ def test_mode():
         print(f"You: {user_input}")
         conversation.append(("Part 2", user_input))
 
-    # Part 3: Two-Way Discussion
     speak("Part 3: Two-Way Discussion. Let's discuss related topics. Why do you think people look up to role models?")
     user_input = capture_audio()
     if user_input:
         print(f"You: {user_input}")
         conversation.append(("Part 3", user_input))
 
-    # Provide feedback at the end of the test
     speak("Thank you for completing the test. Here is your feedback.")
     for part, response in conversation:
         feedback = provide_feedback(response)

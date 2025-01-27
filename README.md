@@ -7,11 +7,11 @@ Getting started:
     run the program - python main.py [after typing press Enter]
 
 Dependencies:
-openai: For interacting with OpenAI's GPT-4 model.
+<ul>openai: For interacting with OpenAI's GPT-4 model.
 pyttsx3: For text-to-speech functionality (allows the program to speak).
 speech_recognition: For converting speech into text.
 google-cloud-speech: To transcribe speech using Google Cloud Speech-to-Text API.
-os: To manage environment variables, such as the OpenAI API key.
+os: To manage environment variables, such as the OpenAI API key.</ul>
 
 Challenges:
 Time lag between the prompts and response.
